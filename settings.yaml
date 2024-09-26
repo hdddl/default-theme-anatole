@@ -8,6 +8,8 @@ style:
       data-type: string
       default: '40%'
       options:
+        - value: '15%'
+          label: '15%'
         - value: '20%'
           label: '20%'
         - value: '30%'
@@ -31,6 +33,17 @@ style:
       type: radio
       data-type: bool
       default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    avatar_display:
+      name: avatar_display
+      label: 显示头像
+      type: radio
+      data-type: bool
+      default: false
       options:
         - value: true
           label: 开启

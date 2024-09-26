@@ -2,9 +2,11 @@
 <div class="sidebar animated fadeInDown">
     <div class="logo-title">
         <div class="title">
+            {{- if  .settings.avatar_display -}}
             <img alt="Logo" class="inline-block"
                  src="{{or .blog_logo .user.Avatar}}"
-                 style="width:127px;{{- if  .settings.avatar_circle -}}border-radius:50%{{- end -}}"/>
+                 style="width:127px;{{- if  .settings.avatar_circle -}}border-radius:50%{{- end -}}"/>            
+            {{- end -}}
             <h3 class="!mt-3 !mb-0">
                 <a href="{{.blog_url}}" title="{{.blog_title}}">{{.blog_title}}</a>
             </h3>
